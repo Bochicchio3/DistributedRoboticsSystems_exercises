@@ -1,0 +1,1 @@
+/home/alfredo/SDR/devel/.private/rviz_pose_publisher/lib/pkgconfig/rviz_pose_publisher.pc

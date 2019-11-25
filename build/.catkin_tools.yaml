@@ -1,0 +1,6 @@
+devel_space: /home/alfredo/SDR/devel
+install: false
+install_space: /home/alfredo/SDR/install
+profile: default
+source_space: /home/alfredo/SDR/src
+workspace: /home/alfredo/SDR

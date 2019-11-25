@@ -1,0 +1,8 @@
+prefix=/home/alfredo/SDR/devel/.private/rviz_pose_publisher
+
+Name: rviz_pose_publisher
+Description: Description of rviz_pose_publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/alfredo/SDR/devel/.private/rviz_pose_publisher/lib 
+Requires: 

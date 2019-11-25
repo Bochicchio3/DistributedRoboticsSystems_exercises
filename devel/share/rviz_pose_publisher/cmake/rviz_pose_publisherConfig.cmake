@@ -1,0 +1,1 @@
+/home/alfredo/SDR/devel/.private/rviz_pose_publisher/share/rviz_pose_publisher/cmake/rviz_pose_publisherConfig.cmake

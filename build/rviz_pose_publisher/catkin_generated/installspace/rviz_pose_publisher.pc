@@ -1,0 +1,8 @@
+prefix=/home/alfredo/SDR/install
+
+Name: rviz_pose_publisher
+Description: Description of rviz_pose_publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/alfredo/SDR/install/lib 
+Requires: 
