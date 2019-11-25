@@ -1,3 +1,6 @@
+#Robotics Distributed System Exercises
+
+
 1. Utilizzando il nodo turtlesim, visualizzare la posa della tartaruga su rviz mentre viene controllata con la tastiera. 
 
 2. Scrivere un nodo che simuli un controllore di alto livello che, presa in ingresso una richiesta di controllo di tipo custom (contenente velocità lineare longitudinale e velocità angolare sullo yaw), generi un controllo per la tartaruga di tipo opportuno che applichi una saturazione sulla richiesta di controllo. I valori della saturazione devono essere impostabili come parametro del nodo. Dimostrare l'effettivo funzionamento del nodo confrontando la richiesta di controllo e il controllo effettuato su rqt_plot.
