@@ -516,8 +516,16 @@ I have deliberatedly chosen to control the steering first and then the linear ve
 
 
 ### Exercise 5: 
-I have implemented an potential field method for navigating the turtle among obstacles. I have slightly modified the task just for sake of illustrating clearly the computed path with an external graph in matplotlib. 
-The main executable is main.py.
+
+
+I have used the potential field method for navigating the turtle among obstacles.
+To launch the node:
+
+```
+roslaunch dynamic_tutorials fifth_exercise.launch
+```
+
+The launchfile executes main.py.
 
 #### Libraries used
 
@@ -741,3 +749,6 @@ There are cases where the path planning algorithm fails:
 ![](2020-02-13-02-06-08.png)
 
 This is due to how the APF algorithm has been implemented and depends of course on how many obstacles are there and how repulsive they are with respect to the goal.
+
+
+
