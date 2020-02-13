@@ -25,6 +25,10 @@
       - [Results](#results-3)
           - [Note](#note)
     - [Exercise 5:](#exercise-5)
+      - [Libraries used](#libraries-used)
+      - [Potential field method](#potential-field-method)
+      - [The Potential field parameters](#the-potential-field-parameters)
+      - [Results](#results-4)
   
 
 
@@ -515,6 +519,8 @@ I have deliberatedly chosen to control the steering first and then the linear ve
 I have implemented an potential field method for navigating the turtle among obstacles. I have slightly modified the task just for sake of illustrating clearly the computed path with an external graph in matplotlib. 
 The main executable is main.py.
 
+#### Libraries used
+
 Two libraries are used. The first is a TurtleBot library where the turtle class has been defined. The other two functions have been used for the artificial potential field method.
 
 ```
@@ -586,7 +592,7 @@ class Vector2d():
         return 'Vector deltaX:{}, deltaY:{}, length:{}, direction:{}'.format(self.deltaX, self.deltaY, self.length,
           
 ```
-
+#### Potential field method
 
 The APF is the real implementation of the potential field method studied in the course. An attractive and a repulsive potentials are defined, the potentials are computed for a grid and summed to obtain the total potential. The computed path just follows the minima of the gradient of the potential field.
 
@@ -664,6 +670,8 @@ class APF():
 
 ```
 
+#### The Potential field parameters
+
 The actual code consist in a sample function that given some obstacles compute a path based on the APF function and shows it on matplotlib. Once we are ok with the compute path, we can close the matplotlib interface and the turtle will go on to perform the computed path. 
 
 Many parameters can be chosen:
@@ -712,6 +720,7 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
 ```
+#### Results
 
 ![](2020-02-13-02-02-18.png)
 
