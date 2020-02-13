@@ -1,0 +1,6 @@
+CMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+Missing variable is:
+CMAKE_CMAKE_py_LINK_EXECUTABLE_LINK_EXECUTABLE
+CMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+Missing variable is:
+CMAKE_CMAKE_py_LINK_EXECUTABLE_LINK_EXECUTABLE

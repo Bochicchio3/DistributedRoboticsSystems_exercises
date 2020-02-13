@@ -1,0 +1,11 @@
+[35m[1mScanning dependencies of target dynamic_tutorials_gencfg[0m
+[ 33%] [34m[1mGenerating dynamic reconfigure files from cfg/Tutorials.cfg: /home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/include/dynamic_tutorials/TutorialsConfig.h /home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/lib/python2.7/dist-packages/dynamic_tutorials/cfg/TutorialsConfig.py[0m
+Generating reconfiguration files for Tutorials in dynamic_tutorials
+Wrote header file in /home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/include/dynamic_tutorials/TutorialsConfig.h
+[ 33%] Built target dynamic_tutorials_gencfg
+[35m[1mScanning dependencies of target dynamic_tutorials_client[0m
+[35m[1mScanning dependencies of target dynamic_tutorials_server[0m
+[100%] [32m[1mLinking CMAKE_py_LINK_EXECUTABLE executable /home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/lib/dynamic_tutorials/dynamic_tutorials_client[0m
+[100%] [32m[1mLinking CMAKE_py_LINK_EXECUTABLE executable /home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/lib/dynamic_tutorials/dynamic_tutorials_server[0m
+[100%] Built target dynamic_tutorials_client
+[100%] Built target dynamic_tutorials_server

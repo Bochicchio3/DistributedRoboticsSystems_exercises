@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="dynamic_tutorials" pkg="dynamic_tutorials" type="dynamic_tutorials">
+  <param name="sat_x" type="double" value="1.0" />
+  <param name="sat_rot" type="double" value="1.0" />
+</node>
+\endverbatim
+

@@ -1,6 +1,6 @@
-devel_space: /home/alfredo/SDR/devel
+devel_space: /home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel
 install: false
-install_space: /home/alfredo/SDR/install
+install_space: /home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/install
 profile: default
-source_space: /home/alfredo/SDR/src
-workspace: /home/alfredo/SDR
+source_space: /home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/src
+workspace: /home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises

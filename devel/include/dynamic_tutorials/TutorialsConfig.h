@@ -1,0 +1,1 @@
+/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/include/dynamic_tutorials/TutorialsConfig.h

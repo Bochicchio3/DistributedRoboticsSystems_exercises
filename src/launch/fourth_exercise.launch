@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
+    <node name="turtlebot_controller" pkg="dynamic_tutorials" type="turtle_baricentre.py" output="screen" clear_params="true" />
+</launch>

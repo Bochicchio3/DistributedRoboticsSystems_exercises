@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~sat_x" : \b [double] Sat x min: -5.5, default: 1.0, max: 5.5
+- \b "~sat_rot" : \b [double] Sat rot min: -5.5, default: 1.0, max: 5.5
+
