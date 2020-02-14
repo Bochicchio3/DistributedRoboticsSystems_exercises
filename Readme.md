@@ -13,6 +13,7 @@
       - [Making the Dynamic_reconfigure tool work](#making-the-dynamicreconfigure-tool-work)
           - [In the CMakeList:](#in-the-cmakelist)
           - [In Package.xml:](#in-packagexml)
+      - [Creating the custom message](#creating-the-custom-message)
       - [Commenting the code: client.py](#commenting-the-code-clientpy)
       - [Results](#results-1)
     - [Exercise 3:](#exercise-3)
@@ -173,6 +174,39 @@ exit(gen.generate(PACKAGE, "dynamic_tutorials", "Tutorials"))
 
 The custom parameters that will be dynamically reconfigured are: sat_x and sat_rot, respectively saturation on linear and angular velocity.
 
+
+#### Creating the custom message
+
+In order to create a custom message the CmakeList and the Package.xml must be modified in order to generate the message correctly. The message must then be imported and used as type for the subscriber.
+
+
+
+
+```
+
+add_message_files(
+    FILES
+    Vel.msg
+  )
+
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
+```
+
+
+```
+from dynamic_tutorials.msg import Vel
+
+...
+
+        self.sub=rospy.Subscriber("vel_cmd", Vel, self.callback)
+
+```
+
+
 #### Commenting the code: client.py
 
 The dynamic configure cfg message must be imported properly.
@@ -211,7 +245,7 @@ class First Exercise(object):
 
         # Create a publisher for our custom message.
         self.pub = rospy.Publisher('turtle1/cmd_vel', Twist, queue_size=25)
-        self.sub=rospy.Subscriber("vel_cmd", Point, self.callback)
+        self.sub=rospy.Subscriber("vel_cmd", Vel, self.callback)
 
 
         # Create a timer to go to a callback at a specified interval.
@@ -222,9 +256,8 @@ class First Exercise(object):
 
 ```
     def callback(self, data):
-        self.vel_command.linear.x=data.x
-        self.vel_command.linear.y=data.y
-        self.vel_command.angular.z=data.z
+        self.vel_command.linear.x=data.linear_vel
+        self.vel_command.angular.z=data.angular_vel
 
         rospy.loginfo('%d, %d, %d',data.x, data.y, data.z)
         
