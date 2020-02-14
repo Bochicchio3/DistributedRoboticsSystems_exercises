@@ -1,7 +1,6 @@
 # Robotics Distributed System Exercises
 
 
-
 - [Robotics Distributed System Exercises](#robotics-distributed-system-exercises)
     - [Assignment:](#assignment)
     - [Exercise 1:](#exercise-1)
