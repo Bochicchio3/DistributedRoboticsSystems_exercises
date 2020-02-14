@@ -29,6 +29,7 @@
       - [Potential field method](#potential-field-method)
       - [The Potential field parameters](#the-potential-field-parameters)
       - [Results](#results-4)
+    - [Note:  building the package](#note-building-the-package)
   
 
 
@@ -784,3 +785,12 @@ This is due to how the APF algorithm has been implemented and depends of course 
 
 
 
+### Note:  building the package
+
+Sometimes catkin build or catkin_make give some problems with CMake variables not declared. In that case just run catkin build / make twice and it will build succesfully.
+
+![](2020-02-14-17-10-47.png)
+
+Just execute catkin build again:
+
+![](2020-02-14-17-11-16.png)
