@@ -1,0 +1,1 @@
+/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/lib/python2.7/dist-packages/dynamic_tutorials/msg/__init__.py

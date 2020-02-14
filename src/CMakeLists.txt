@@ -8,10 +8,30 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
 )
 
-
 generate_dynamic_reconfigure_options(
    cfg/Tutorials.cfg
  )
+
+
+
+
+
+add_message_files(
+    FILES
+    Vel.msg
+  )
+
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
+
+
+catkin_package(
+  
+  CATKIN_DEPENDS message_runtime 
+  )
 
 
 add_executable(dynamic_tutorials_server src/server.py)

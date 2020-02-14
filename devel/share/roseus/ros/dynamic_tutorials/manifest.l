@@ -1,0 +1,1 @@
+/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/share/roseus/ros/dynamic_tutorials/manifest.l

@@ -1,0 +1,1 @@
+/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/share/common-lisp/ros/dynamic_tutorials/msg/dynamic_tutorials-msg.asd

@@ -9,9 +9,8 @@ import math
 from dynamic_reconfigure.server import Server as DynamicReconfigureServer
 # Import custom message data and dynamic reconfigure variables.
 from dynamic_tutorials.cfg import TutorialsConfig as ConfigType
-
+from dynamic_tutorials.msg import Vel
 from geometry_msgs.msg import Twist
-from geometry_msgs.msg import Point
 
 
 class FirstExercise(object):
@@ -32,18 +31,17 @@ class FirstExercise(object):
 
         # Create a publisher for our custom message.
         self.pub = rospy.Publisher('turtle1/cmd_vel', Twist, queue_size=25)
-        self.sub=rospy.Subscriber("vel_cmd", Point, self.callback)
+        self.sub=rospy.Subscriber("vel_cmd", Vel, self.callback)
 
 
         # Create a timer to go to a callback at a specified interval.
         self.rate=rospy.Rate(10)
 
     def callback(self, data):
-        self.vel_command.linear.x=data.x
-        self.vel_command.linear.y=data.y
-        self.vel_command.angular.z=data.z
+        self.vel_command.linear.x=data.linear_vel
+        self.vel_command.angular.z=data.angular_vel
 
-        rospy.loginfo('%d, %d, %d',data.x, data.y, data.z)
+        rospy.loginfo('%d, %d',data.linear_vel, data.angular_vel)
         
         if abs(self.vel_command.linear.x)>self.sat_x:
             self.vel_command.linear.x=math.copysign(self.sat_x, self.vel_command.linear.x)

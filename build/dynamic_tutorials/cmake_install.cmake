@@ -144,6 +144,57 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/dynamic_tutorials" TYPE DIRECTORY FILES "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/lib/python2.7/dist-packages/dynamic_tutorials/cfg")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamic_tutorials/msg" TYPE FILE FILES "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/src/msg/Vel.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamic_tutorials/cmake" TYPE FILE FILES "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/build/dynamic_tutorials/catkin_generated/installspace/dynamic_tutorials-msg-paths.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/include/dynamic_tutorials")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/share/roseus/ros/dynamic_tutorials")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/share/common-lisp/ros/dynamic_tutorials")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/share/gennodejs/ros/dynamic_tutorials")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/lib/python2.7/dist-packages/dynamic_tutorials")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel/.private/dynamic_tutorials/lib/python2.7/dist-packages/dynamic_tutorials")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/build/dynamic_tutorials/catkin_generated/installspace/dynamic_tutorials.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamic_tutorials/cmake" TYPE FILE FILES "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/build/dynamic_tutorials/catkin_generated/installspace/dynamic_tutorials-msg-extras.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamic_tutorials/cmake" TYPE FILE FILES
+    "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/build/dynamic_tutorials/catkin_generated/installspace/dynamic_tutorialsConfig.cmake"
+    "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/build/dynamic_tutorials/catkin_generated/installspace/dynamic_tutorialsConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamic_tutorials" TYPE FILE FILES "/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/src/package.xml")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/build/dynamic_tutorials/gtest/cmake_install.cmake")

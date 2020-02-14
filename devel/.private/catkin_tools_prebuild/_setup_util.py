@@ -270,7 +270,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = '/home/alfredo/Desktop/PROJECTS/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel;/opt/ros/melodic'.split(';')
+            CMAKE_PREFIX_PATH = '/home/alfredo/Desktop/PROJECTS/DistributedRoboticsSystems_exercises/devel;/home/alfredo/Desktop/PROJECTS/gym-gazebo/gym_gazebo/envs/installation/catkin_ws/devel;/opt/ros/melodic'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []
