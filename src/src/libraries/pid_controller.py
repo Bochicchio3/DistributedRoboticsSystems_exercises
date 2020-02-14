@@ -19,6 +19,7 @@ class TurtleBot:
 
         self.pose = Pose()
         self.rate = rospy.Rate(50)
+        self.vel_msg=Twist()
         
         
         
@@ -53,36 +54,36 @@ class TurtleBot:
 
     def move2goal(self,path, tolerance):
         """Moves the turtle to the goal."""
-        goal_pose = Pose()
+        self.goal_pose = Pose()
         for K in path:
             
             # Get the input from the user.
-            goal_pose.x = K[0]
-            goal_pose.y = K[1]
-            distance_tolerance =tolerance
+            self.goal_pose.x = K[0]
+            self.goal_pose.y = K[1]
+            self.distance_tolerance =tolerance
     
-            while self.euclidean_distance(goal_pose) >= distance_tolerance:
+            while self.euclidean_distance(self.goal_pose) >= self.distance_tolerance:
 
                 # Linear velocity in the x-axis.
-                vel_msg.linear.x = self.linear_vel(goal_pose)
-                vel_msg.linear.y = 0
-                vel_msg.linear.z = 0
+                self.vel_msg.linear.x = self.linear_vel(self.goal_pose)
+                self.vel_msg.linear.y = 0
+                self.vel_msg.linear.z = 0
 
                 # Angular velocity in the z-axis.
-                vel_msg.angular.x = 0
-                vel_msg.angular.y = 0
-                vel_msg.angular.z = self.angular_vel(goal_pose)
+                self.vel_msg.angular.x = 0
+                self.vel_msg.angular.y = 0
+                self.vel_msg.angular.z = self.angular_vel(self.goal_pose)
 
                 # Publishing our vel_msg
-                self.velocity_publisher.publish(vel_msg)
+                self.velocity_publisher.publish(self.vel_msg)
 
                 # Publish at the desired rate.
                 self.rate.sleep()
 
             # Stopping our robot after the movement is over.
-            vel_msg.linear.x = 0
-            vel_msg.angular.z = 0
-            self.velocity_publisher.publish(vel_msg)
+            self.vel_msg.linear.x = 0
+            self.vel_msg.angular.z = 0
+            self.velocity_publisher.publish(self.vel_msg)
 
             # If we press control + C, the node will stop.
         rospy.spin()
